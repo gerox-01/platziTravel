@@ -12,14 +12,14 @@
     <title>Platzi Travel</title>
 </head>
 
-<body>
+<body class="font-Montserrat">
     <nav></nav>
     <div id="tab_bar"></div>
     <section class="w-full h-screen">
         <div id="home">
             <div class="w-full h-full flex flex-col absolute space-y-96 py-4 items-center">
-                <input type="search" placeholder="Search" class="outline-none p-3 rounded-full shadow-sm">
-                <button class="w-36 rounded-full text-xl text-primary font-semibold p-4 bg-white">Explorar</button>
+                <input type="search" placeholder="Search" class="outline-none p-3 rounded-full shadow-sm transition duration-300 focus-within:shadow-sm focus:ring-2 focus:w-11/12">
+                <button class="w-48 rounded-full text-lg text-primary font-semibold p-4 bg-white transition transition-all duration-500 ease-in-out hover:bg-primary hover:text-white transform hover:-translate-y-1 hover:scale-110">Explore</button>
             </div>
             <div class="w-full h-3/4">
                 <div class="w-full h-full">
@@ -27,13 +27,45 @@
                 </div>
             </div>
         </div>
-        <div id="recomended" class="p-20">
-            <div class="w-48 h-64 shadow-md rounded-lg">
-                <div class="w-full h-3/5 rounded-t-lg bg-norway bg-cover">
+        <div id="recomended" class="p-6">
+            <p class="text-3xl text-primary font-semibold">Our recomended</p>
+            <div class="w-auto h-80 lg:h-80 items-center mt-6 overflow-x-auto overscroll-x-contain flex space-x-4 lg:space-x-6 scrollbar overflow-y-hidden">
+                <div class="Card">
+                    <div id="image-container" class="w-full h-3/5 rounded-t-lg bg-norway bg-cover"></div>
+                    <div class="bg-secondary h-2/5 rounded-b-lg  ">
+                        <p class="text-xl px-4 py-2 font-semibold text-white">Norway</p>
+                        <p class="text-sm px-4 overflow-ellipsis pr-2 text-white">Beatiful Place</p>
+                    </div>
                 </div>
-                <div class="w-full h-2/5 text-white text-center px-4 py-4 bg-secondary rounded-b-lg">
-                    <p class="font-bold text-xl">Norway</p>
-                    <p class="text-md py-2">Beatiful Place</p>
+                <div class="Card">
+                    <div class="w-full h-3/5 rounded-t-lg bg-new_york bg-cover">
+                    </div>
+                    <div class="h-2/5 text-terciary  bg-white rounded-b-lg">
+                        <p class="text-xl px-4 py-2 font-semibold ">New York</p>
+                        <p class="text-sm px-4 overflow-ellipsis pr-2">The big apple</p>
+                    </div>
+                </div>
+                <div class="Card">
+                    <div id="image-container" class="w-full h-3/5 rounded-t-lg bg-yosemite bg-cover"></div>
+                    <div class="bg-secondary h-2/5 rounded-b-lg  ">
+                        <p class="text-xl px-4 py-2 font-semibold text-white">Yosemite</p>
+                        <p class="text-sm px-4 overflow-ellipsis pr-2 text-white">A break from the world</p>
+                    </div>
+                </div>
+                <div class="Card">
+                    <div class="w-full h-3/5 rounded-t-lg bg-seattle bg-cover">
+                    </div>
+                    <div class="h-2/5 text-terciary  bg-white rounded-b-lg">
+                        <p class="text-xl px-4 py-2 font-semibold ">Seatle</p>
+                        <p class="text-sm px-4 overflow-ellipsis pr-2">Big city</p>
+                    </div>
+                </div>
+                <div class="Card">
+                    <div id="image-container" class="w-full h-3/5 rounded-t-lg bg-switzerland bg-cover"></div>
+                    <div class="bg-secondary h-2/5 rounded-b-lg  ">
+                        <p class="text-xl px-4 py-2 font-semibold text-white">Switzerland</p>
+                        <p class="text-sm px-4 overflow-ellipsis pr-2 text-white">Beatiful landspace</p>
+                    </div>
                 </div>
             </div>
         </div>
