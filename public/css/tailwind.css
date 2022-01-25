@@ -870,6 +870,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.padding-footer{
+  padding-bottom: 5rem;
+}
+
 .focus-within\:shadow-sm:focus-within {
   --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
   --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
